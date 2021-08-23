@@ -9,11 +9,13 @@ exports.putValue = async (key, value) => {
 };
 
 exports.getValue = async (key) => {
-    let value = await (await client.get(key)).toString();
+    let value = await client.get(key);
     if (utils.isJsonParsable(value)) value = JSON.parse(value);
 
     return value;
 }
+
+exports.delKey = async (key) => await client.delete().key(key);
 
 exports.getAll = async () => {
     const values = await client.getAll();

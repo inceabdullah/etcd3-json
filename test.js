@@ -1,5 +1,5 @@
 // You can get client object for native use
-const { putValue, getValue, getAll, client } = require("etcd3-json");
+const { putValue, getValue, getAll, delKey, client } = require("etcd3-json");
 
 (async ()=>{
     const person = {
@@ -23,6 +23,10 @@ const { putValue, getValue, getAll, client } = require("etcd3-json");
     const all = await getAll();
 
     console.log({fooValue, personValue, peopleValue});
+
+    //Delete one
+    await delKey("foo");
+    console.log({})
 
     // You can use client object from Etcd3 to use natively
     await client.delete().all();

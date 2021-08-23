@@ -5,7 +5,7 @@
   },
   "name": "etcd3-json",
   "description": "Etcd supports string values. You can keep json or array objects in etcd server with being stringified and can get them parsed.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
