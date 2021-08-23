@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "etcd3": "^1.1.0",
+    "json-circular-stringify": "^1.0.1"
+  }
+}
