@@ -1,11 +1,11 @@
 {
   "dependencies": {
-    "etcd3": "^1.1.1",
+    "etcd3": "^1.1.0",
     "json-circular-stringify": "^1.0.1"
   },
   "name": "etcd3-json",
   "description": "Etcd supports string values. You can keep json or array objects in etcd server with being stringified and can get them parsed.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
