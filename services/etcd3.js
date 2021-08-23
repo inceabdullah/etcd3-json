@@ -2,10 +2,10 @@ const utils = require("../helpers/utils")
 const { Etcd3 } = require('etcd3');
 const client = exports.client = new Etcd3();
 
-exports.putValue = (key, value) => {
+exports.putValue = async (key, value) => {
     if (utils.isObject(value)) value = JSON.stringify(value);
 
-    return client.put(key).value(value);
+    return await client.put(key).value(value);
 };
 
 exports.getValue = async (key) => {
