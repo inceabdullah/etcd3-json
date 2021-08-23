@@ -2,5 +2,24 @@
   "dependencies": {
     "etcd3": "^1.1.0",
     "json-circular-stringify": "^1.0.1"
-  }
+  },
+  "name": "etcd3-json",
+  "description": "Etcd supports string values. You can keep json or array objects in etcd server with being stringified and can get them parsed.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inceabdullah/etcd3-json.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inceabdullah/etcd3-json/issues"
+  },
+  "homepage": "https://github.com/inceabdullah/etcd3-json#readme"
 }
