@@ -4,6 +4,9 @@ Etcd supports string values. You can keep json or array objects in etcd server w
 
 This lib exports client object from Etcd3 class to use that framework natively also.
 
+### Install
+`npm i etcd3-json`
+
 in [test.js file](test.js) can be seen an example
 
 ```JavaScript
