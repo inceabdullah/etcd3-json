@@ -42,6 +42,14 @@ const { putValue, getValue, getAll, client } = require("./services/etcd3");
         peopleValue: [ { name: 'john', surname: 'snow', age: 4 } ]
     }
  */
+//Delete one
+    await delKey("foo");
+    const _fooValue = await getValue("foo");
+    console.log({_fooValue})
+
+/*  expected result
+    { _fooValue: {} }
+ */
 
     // You can use client object from Etcd3 to use natively
     await client.delete().all();
